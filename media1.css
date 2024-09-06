@@ -1,0 +1,25 @@
+
+@media only screen and (max-width: 1200px) {
+    body{
+        font-size: 14px;
+    }
+    .container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px){
+    .left-pane{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        transform: translateX(-100px);
+        transition: transform 0.3s ease;
+    }
+
+    .left-pane.show{
+        transform: translateX(0g);
+    }
+}

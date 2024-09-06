@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Pal</title>
+    <link rel="stylesheet" href="style1.css"/>
+    <link rel="stylesheet" href="media1.css"/>
+    
+</head>
+<body>
+    <header>          
+        <h1>Study Pal</h1>        
+    </header>
+       
+    <main >
+        <section id="timer-section">
+            <h2 id="timer-label">Work Time Pal</h2>
+            <div id="timer">25:00</div>    
+            <div>
+                <button id="start-pause">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+        </section>
+        <section id="music-section">
+            <button id="music-toggle">Play Music</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Study Pal. Focus & Learn.</p>
+        <p>Click the links below to follow for more.</p>
+        <div id="socials-container">
+            <img src="./Items/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://linkedin.com'"/>
+            <img src="./Items/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/McAnnison'"/>
+        </div>
+    </footer>
+    <audio id="music-player">
+        <source src="./Items/Study Pal.mp3" type="audio/mp3">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
