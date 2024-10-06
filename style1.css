@@ -1,129 +1,56 @@
-/* Global Styles */
+/* Base Styles */
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color:  rgb(5, 18, 95);
-    color: #2a2727;
+    background-color: #0a043a;
 }
 
 header {
-    background: #007BFF;
-    color: #fff;
-    padding: 20px 20px;
-    width: 100%;
-}    
-
-/* Navigation style */
-nav {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-}
-
-ul {
-    list-style: none; 
-    display: flex; 
-    gap: 20px; 
-}
-
-li a {
-    text-decoration: none; 
+    background-color: #007BFF; /* Primary color */
     color: white;
-    font-size: 18px; 
-    transition: color 0.3s; 
+    padding: 15px;
 }
 
-li a:hover {
-    color: #000000; 
-    font-size: bold;
-}
-
-/* Logo Styles */
 .logo {
-    font-size: 24px; 
-    color: white; 
-    font-weight: bold; 
-    margin-left: 35px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-img {
-    height: 2.9em;
-    margin-top: 1rem;
-    border-radius: 30%;
-    display: inline-block;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Main Section */
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    height: 100vh;
+nav ul li {
+    display: inline;
+    margin-right: 15px;
 }
 
-/* Timer Section */
-
-#timer-section {
-    padding: 20px 20px;
-    width: 100%;
-    background: #fff;
-    align-items: center;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    font-size: 3em;
-    margin-bottom: 30px;
-    color: rgb(6, 31, 157);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-#timer-box {
-    width: 500px;
-    padding: 30px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added color for better visibility */
+nav ul li a:hover {
+    color: #000000; 
+    font: bold;
 }
 
-#timer {
-    font-size: 3em;
-    font-weight: 500;
-    margin: 20px 0;
-    color: rgb(33, 27, 27);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* Home design */
-#home ul {
-    list-style: none;
+#main {
     text-align: center;
 }
 
-.content-section1 {
-    padding: 20px;
-    background: #fff;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+#timer-section {
+    font-size: 25px;
+    text-align: center;
 }
 
-.content-section2 {
-    padding: 20px;
-    background: #fff;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+#timer {
+    font-size: 45px;
+    font-weight: 500;
 }
-
-
 
 /* List Item Styles */
 .li {
@@ -133,7 +60,7 @@ main {
 /* Button Styles */
 button {
     padding: 12px 24px;
-    font-size: 0.9em; /* for better readability */
+    font-size: 0.9em;
     margin: 10px;
     cursor: pointer;
     border-radius: 25px;
@@ -149,26 +76,35 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Music Section */
-#music-section {
-    margin-top: 30px;
+.content-box {
+    max-width: 1231px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(246, 246, 211);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/*back to top*/
-
-.back-to-top {
-    position: fixed; 
-    right: 20px; 
-    bottom: 20px; 
-    background-color: #007BFF; 
-    color: white; 
-    padding: 10px 15px; 
-    border-radius: 5px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+.content-section {
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-.back-to-top:hover {
-    background-color: #073668; 
+.content-section ul {
+    list-style: none;
+}
+
+.content-section li{
+    display: inline-block;
+    text-align: column;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    padding-left: 20px;
 }
 
 /* Footer Styles */
@@ -191,12 +127,90 @@ footer {
 }
 
 .icon {
-    width: 30px; 
-    height: 30px; 
+    width: 30px;
+    height: 30px;
     color: white;
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
 }
 
 .icon:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #073668;
+}
+
+
+@media (min-width: 481px) {
+    .back-to-top {
+        display: none; /* Hide on larger screens */
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul li {
+        display: flex; /* Stack items vertically */
+        margin: 10px 0; /* Vertical spacing */
+    }
+
+    .logo {
+        font-size: 20px; /* Smaller logo font size */
+    }
+
+    #timer-section {
+        font-size: 18px;
+    }
+
+    #timer {
+        font-size: 30px;
+    }
+
+    .content-box {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    footer img {
+        width: 25px; /* Smaller icons */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin-right: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .content-box {
+        margin: 10px; /* Reduce margin on smallest screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller title font size */
+    }
+
+    h2 {
+        font-size: 20px; /* Smaller sub-title font size */
+    }
+
+    footer {
+        font-size: 14px; /* Smaller footer font size */
+    }
 }
