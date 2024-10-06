@@ -48,8 +48,8 @@ nav ul li a:hover {
 }
 
 #timer {
-    font-size: 45px;
-    font-weight: 500;
+    font-size: 60px;
+    font-weight: 600;
 }
 
 /* List Item Styles */
@@ -177,7 +177,7 @@ footer {
     }
 
     #timer {
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .content-box {
