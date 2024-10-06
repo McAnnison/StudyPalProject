@@ -5,89 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Pal</title>
     <link rel="stylesheet" href="style1.css"/>
-    <link rel="stylesheet" href="media1.css"/>
-    
 </head>
-<body>  
+<body>
     <header>
-        <nav>
-            <div class="logo">Study Pal</div><br>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>      
-    
-    <main class="home">
-        <section id="home" class="content-section1">
-            <h1>Welcome to Study Pal!</h1><hr>
-            <p>At Study Pal, we believe that learning should be engaging, effective, and enjoyable. Whether you're a student preparing for exams, a professional seeking to enhance your skills, or someone who loves to learn, we’re here to support your journey.</p><br><br>
-            
-            <h2>Why Choose Study Pal?</h2><br>
-            <ul class="home">
-                <li><strong>Customizable Study Timers:</strong> Manage your study sessions with our easy-to-use timers.</li><br><br>
-                <li><strong>Music for Concentration:</strong> Enjoy a selection of study playlists to help you concentrate.</li><br><br>
-                <li><strong>Interactive Learning Tools:</strong> Access a variety of tools designed to enhance your learning experience.</li><br><br>
-                <li><strong>Community Support:</strong> Join a community of learners and share tips and questions.</li><br><br>
-            </ul>
-            
-            <h2>Get Started Today!</h2><br>
-            <p>Ready to boost your study sessions? Join us now and discover a more effective way to learn. With Study Pal, your academic success is just a click away!</p>
-        </section>
-    </main>
-    
-    <main >
-        <section id="timer-section">
-            <h2 id="timer-label">Work Time Pal</h2>
-            <div id="timer-box">
-            <div id="timer">25:00</div>    
-            <div>
-                <button id="start-pause">Start</button>
-                <button id="reset">Reset</button>
-            </div>
-            <div>
-                <button id="music-toggle">Play Music</button>
-            </div>
-        </section>
-    </main>
-
-    
-
-    <section id="about" class="content-section2">
-        <h1>About Study Pal</h1>
-        <p>At Study Pal, our mission is to transform the way you study and learn. We understand that education is not just about memorizing facts; it’s about developing skills and fostering a love for learning.</p>
-        
-        <h2>Our Vision</h2>
-        <p>We envision a world where every learner has access to personalized study tools and resources that make learning engaging, efficient, and enjoyable. Our platform is designed to cater to diverse learning styles and preferences.</p>
-    
-        <h2>What We Offer</h2>
+    <div class="logo">Study Pal</div>
+    <nav>
         <ul>
-            <li><strong>Personalized Study Timers:</strong> Customize your study sessions with flexible timers that adapt to your routine.</li>
-            <li><strong>Curated Music Playlists:</strong> Enjoy ambient music designed to enhance focus and concentration while you study.</li>
-            <li><strong>Interactive Learning Tools:</strong> Utilize tools like flashcards, quizzes, and note-taking features to reinforce your understanding.</li>
-            <li><strong>Supportive Community:</strong> Connect with fellow learners, share resources, and participate in group study sessions.</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    
-        <h2>Join Us Today!</h2>
-        <p>Whether you're a student, a professional, or a lifelong learner, Study Pal is here to assist you in achieving your educational goals. Join us now and take the first step toward a more effective and enjoyable learning experience!</p>
-    </section>
-
-    <a href="#"  class="back-to-top" title="Back to Top">&#8593;</a>
-    <footer id="contact">
-        <img src="IMG-20240911-WA0014.jpg"> <p>&copy; 2024 Study Pal. Focus & Learn.</p>
-        <p>Click the links below to follow for more.</p>
-        <div id="socials-container">
-            <img src="./Items/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://linkedin.com'"/>
-            <img src="./Items/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/McAnnison'"/>
-            <img src="./Items/email.png" alt="My Email Profile" class="icon" onclick="location.href='https://mensahanni98@gmail.com'"/>
-        </div>
+    </nav>
+</div>
+</header>
+<div class="content-box">
+<main class="home">
+    <section id="home" class="content-section">
+        <h1>Welcome to Study Pal!</h1>
+        <hr>
+        <p>At Study Pal, we believe that learning should be engaging, effective, and enjoyable. Whether you're a student preparing for exams, a professional seeking to enhance your skills, or someone who loves to learn, we’re here to support your journey.</p>
+        <br><br>
         
-    </footer>
-    <audio id="music-player">
-        <source src="./Items/Study Pal.mp3" type="audio/mp3">
-    </audio>
-    <script src="script.js"></script>
+        <h2>Why Choose Study Pal?</h2>
+        <br>
+        <ul>
+            <li><strong>Customizable Study Timers:</strong> Manage your study sessions with our easy-to-use timers.</li>
+            <br><br>
+            <li><strong>Music for Concentration:</strong> Enjoy a selection of study playlists to help you concentrate.</li>
+            <br><br>
+            <li><strong>Interactive Learning Tools:</strong> Access a variety of tools designed to enhance your learning experience.</li>
+            <br><br>
+            <li><strong>Community Support:</strong> Join a community of learners and share tips and questions.</li>
+            <br><br>
+        </ul>
+        
+        <h2>Get Started Today!</h2>
+        <br>
+        <p>Ready to boost your study sessions? Join us now and discover a more effective way to learn. With Study Pal, your academic success is just a click away!</p>
+    </section>
+</main>
+
+<main>
+    <section id="timer-section">
+        <h1>Smart Timer</h1>
+    <hr>
+        <h2 id="timer-label">Work Time Pal</h2>
+        <div id="timer">25:00</div>    
+        <div>
+            <button id="start-pause">Start</button>
+            <button id="reset">Reset</button>
+            <br><br>
+        </div>
+        <div>
+            <button id="music-toggle">Play Music</button>
+        </div>
+    </section>
+</main>
+
+<section id="about" class="content-section">
+    <h1>About Study Pal</h1>
+    <hr>
+    <p>At Study Pal, our mission is to transform the way you study and learn. We understand that education is not just about memorizing facts; it’s about developing skills and fostering a love for learning.</p>
+    
+    <h2>Our Vision</h2>
+    <p>We envision a world where every learner has access to personalized study tools and resources that make learning engaging, efficient, and enjoyable. Our platform is designed to cater to diverse learning styles and preferences.</p>
+
+    <h2>What We Offer</h2>
+    <ul>
+        <li><strong>Personalized Study Timers:</strong> Customize your study sessions with flexible timers that adapt to your routine.</li><br>
+        <li><strong>Curated Music Playlists:</strong> Enjoy ambient music designed to enhance focus and concentration while you study.</li><br>
+        <li><strong>Interactive Learning Tools:</strong> Utilize tools like flashcards, quizzes, and note-taking features to reinforce your understanding.</li><br>
+        <li><strong>Supportive Community:</strong> Connect with fellow learners, share resources, and participate in group study sessions.</li><br>
+    </ul>
+
+    <h2>Join Us Today!</h2>
+    <p>Whether you're a student, a professional, or a lifelong learner, Study Pal is here to assist you in achieving your educational goals. Join us now and take the first step toward a more effective and enjoyable learning experience!</p>
+</section>
+</div>
+
+<a href="#" class="back-to-top" id="backToTop" title="Back to Top">&#8593;</a>
+<footer id="contact">
+    <p><img src="IMG-20240911-WA0014.jpg" alt="study-logo"> &copy; 2024 Study Pal. Focus & Learn.</p>
+       <p>Click the links below to follow for more.</p>
+       <div id="socials-container">
+           <img src="./Items/linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://linkedin.com'"/>
+           <img src="./Items/github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/McAnnison'"/>
+           <img src="./Items/email.png" alt="My Email Profile" class="icon" onclick="location.href='https://mensahanni98@gmail.com'"/>
+       </div>
+       
+   </footer>
+   <audio id="music-player">
+       <source src="./Items/Study Pal.mp3" type="audio/mp3">
+   </audio>
+   <script src="script.js"></script>
 </body>
 </html>
