@@ -119,7 +119,8 @@ footer {
 }
 
 img {
-    height: 2.9em;
+    height: 2.9em; 
+    width: 30px;
     margin-top: 1rem;
     border-radius: 30%;
 }
@@ -219,4 +220,9 @@ img {
     footer {
         font-size: 14px; /* Smaller footer font size */
     }
+
+    img {
+    height: 2.9em; 
+    width: 30px;
+        }
 }
