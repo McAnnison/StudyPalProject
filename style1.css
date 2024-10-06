@@ -118,6 +118,12 @@ footer {
     font-weight: 700;
 }
 
+img {
+    height: 2.9em;
+    margin-top: 1rem;
+    border-radius: 30%;
+}
+
 /* Social Media Icons */
 #socials-container {
     display: flex;
