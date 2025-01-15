@@ -1,245 +1,311 @@
+I've got you covered! Here's your corrected and enhanced HTML with CSS animations to give it a sleek look. I've also styled any missing elements.
+
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Study Pal</title>
-  <style >
-      #hero {
-  background-color: #f0f0f0;
-  text-align: center;
-  padding: 100px 0;
-}
+    <title>Study Pal</title>
+  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-.hero-content {
-  max-width: 600px;
-  margin: 0 auto;
-}
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
 
-h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-p {
-  font-size: 24px;
-  margin-bottom: 30px;
-}
+        nav li {
+            margin: 0 15px;
+        }
 
-.btn {
-  background-color: #007bff;
-  color: #fff;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-}
-      nav {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-}
+        nav li a {
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
+        nav li a:hover {
+            background-color: #111;
+        }
 
-nav li {
-  float: left;
-}
+        #hero {
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 100px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
 
-nav li a {
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+        .hero-content {
+            max-width: 600px;
+            margin: 0 auto;
+            animation: slideIn 1s ease-out;
+        }
 
-nav li a:hover {
-  background-color: #111;
-}
-#content {
-  padding: 50px;
-}
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            animation: zoomIn 1s ease-in-out;
+        }
 
-#content h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
+        p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
 
-#content p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
 
-.service {
-  text-align: center;
-  margin-bottom: 30px;
-}
+        .btn:hover {
+            background-color: #0056b3;
+        }
 
-.service img {
-  max-width: 100%;
-  height: auto;
-}
-      #about {
-  padding: 50px;
-}
+        #content {
+            padding: 50px;
+        }
 
-#about h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
+        #content h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-out;
+        }
 
-#about p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
+        #content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
 
-.team-member {
-  text-align: center;
-  margin-bottom: 30px;
-}
+        .service {
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-in-out;
+        }
 
-.team-member img {
-  max-width: 200px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
+        .service img {
+            max-width: 100%;
+            height: auto;
+        }
 
-      .footer {
-          background-color: #3fff;
-          color: #fff;
-      }
+        #about {
+            padding: 50px;
+            background-color: #ffffff;
+            animation: fadeIn 2s ease-in-out;
+        }
 
- .footer .socials-container .img {
-     height: 30px;
-     width: 30px;
-     display: flex;
-     bottom: 10px;
-    }
-     
-        
+        #about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
 
+        #about p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
 
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-/* For screens smaller than 600px */
-@media only screen and (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    display: none;
-  }
+        .team-member img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            animation: zoomIn 1s ease-in-out;
+        }
 
-  nav li {
-    float: none;
-    width: 100%;
-  }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
 
-  nav li a {
-    padding: 20px;
-  }
+        footer p {
+            margin: 0;
+        }
 
-  nav .icon {
-    display: block;
-    cursor: pointer;
-  }
-}
+        .footer .socials-container {
+            margin: 20px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
 
-/* For screens larger than 600px */
-@media only screen and (min-width: 601px) {
-  nav ul {
-    display: flex;
-  }
+        .footer .socials-container .icon {
+            height: 30px;
+            width: 30px;
+            margin: 0 10px;
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
 
-  nav .icon {
-    display: none;
-  }
-}
+        .footer .socials-container .icon:hover {
+            transform: scale(1.2);
+        }
 
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
 
-  </style>
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                display: none;
+            }
+
+            nav li {
+                float: none;
+                width: 100%;
+            }
+
+            nav li a {
+                padding: 20px;
+            }
+
+            nav .icon {
+                display: block;
+                cursor: pointer;
+            }
+        }
+
+        @media only screen and (min-width: 601px) {
+            nav ul {
+                display: flex;
+            }
+
+            nav .icon {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-  </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="hero">
-  <div class="hero-content">
-    <h1>Your Ultimate Study Companion</h1>
-    <p>Study smarter, not harder.</p>
-    <a href="#" class="btn">Start Learning</a>
-  </div>
-  <img src="hero-image.jpg" alt="Hero Image">
-</section>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Your Ultimate Study Companion</h1>
+            <p>Study smarter, not harder.</p>
+            <a href="#" class="btn">Start Learning</a>
+        </div>
+        <img src="hero-image.jpg" alt="Hero Image">
+    </section>
+
     <section id="content">
-  <h2>Our Services</h2>
-  <p>We offer a range of services to help you succeed.</p>
-  <div class="service">
-    <h3>Tutoring</h3>
-    <p>Expert tutors to guide you through any subject.</p>
-    <img src="tutoring.jpg" alt="Tutoring Service">
-  </div>
-  <div class="service">
-    <h3>Study Resources</h3>
-    <p>Access a vast library of study materials.</p>
-    <img src="resources.jpg" alt="Study Resources">
-  </div>
-  <div class="service">
-    <h3>Community Forum</h3>
-    <p>Connect with fellow students and discuss academic topics.</p>
-    <img src="forum.jpg" alt="Community Forum">
-  </div>
-</section>
+        <h2>Our Services</h2>
+        <p>We offer a range of services to help you succeed.</p>
+        <div class="service">
+            <h3>Tutoring</h3>
+            <p>Expert tutors to guide you through any subject.</p>
+            <img src="tutoring.jpg" alt="Tutoring Service">
+        </div>
+        <div class="service">
+            <h3>Study Resources</h3>
+            <p>Access a vast library of study materials.</p>
+            <img src="resources.jpg" alt="Study Resources">
+        </div>
+        <div class="service">
+            <h3>Community Forum</h3>
+            <p>Connect with fellow students and discuss academic topics.</p>
+            <img src="forum.jpg" alt="Community Forum">
+        </div>
+    </section>
+
     <section id="about">
-  <h2>About Us</h2>
-  <p>We are a passionate team dedicated to helping students succeed.</p>
-  <div class="team-member">
-    <img src="team-member1.jpg" alt="Team Member 1">
-    <h3>John Doe</h3>
-    <p>Founder and CEO</p>
-  </div>
-  <div class="team-member">
-    </div>
-  <p>Our mission is to provide high-quality study resources and support to students of all levels.</p>
-  <p>Join our community and start your journey to academic success today.</p>
-  <a href="#" class="btn">Join Us</a>
-</section>
+        <h2>About Us</h2>
+        <p>We are a passionate team dedicated to helping students succeed.</p>
+        <div class="team-member">
+            <img src="team-member1.jpg" alt="Team Member 1">
+            <h3>John Doe</h3>
+            <p>Founder and CEO</p>
+        </div>
+        <div class="team-member">
+            <!-- Add more team members here if needed -->
+        </div>
+        <p>Our mission is to provide high-quality study resources and support to students of all levels.</p>
+        <p>Join our community and start your journey to academic success today.</p>
+        <a href="#" class="btn">Join Us</a>
+    </section>
 
-<footer id="contact">
-    <p><img src="IMG-20240911-WA0014.jpg" alt="study-logo"> &copy; 2024 Study Pal. Focus & Learn.</p>
-       <p>Click the links below to follow for more.</p>
-       <div id="socials-container">
-           <img src="linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://linkedin.com'"/>
-           <img src="github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/McAnnison'"/>
-           <img src="email.png" alt="My Email Profile" class="icon" onclick="location.href='https://mensahanni98@gmail.com'"/>
-       </div>
-       
-   </footer>
-   <audio id="music-player">
-       <iframe 
-    src="https://www.youtube.com/embed/RJTcqnGPQME?si=Z8_rdUc76oLcUNg-" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
+    <footer id="contact">
+        <p><img src="IMG-20240911-WA0014.jpg" alt="study-logo"> &copy; 2024 Study Pal. Focus & Learn.</p>
+        <p>Click the links below to follow for more.</p>
+        <div class="footer socials-container">
+            <img src="linkedin.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://linkedin.com'"/>
+            <img src="github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/McAnnison'"/>
+            <img src="email.png" alt="My Email Profile" class="icon" onclick="location.href='https://mensahanni98@gmail.com'"/>
+        </div>
+    </footer>
 
-   </audio>
-   <script src="script.js"></script>
-</body>
-</html>
+    <audio id="music-player">
+        <iframe 
+            src="https://www.youtube.com/embed/RJTcqnGPQME?si=Z8_rdUc76oLcUNg-" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+            </body>
+            </html>
